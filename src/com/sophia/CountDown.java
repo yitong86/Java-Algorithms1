@@ -9,12 +9,13 @@ public class CountDown {
         int number = scanner.nextInt();
         countDown(number);
     }
-    public static void countDown(int number){
-        if (number > 0){
+    //recursion
+    public static int countDown(int number){
+        if (number > -1){
             System.out.println(number);
-            countDown(number-1);
-        }else if (number <= 0){
-            System.out.println("error");
+           return countDown(number-1);
+        } else {
+            return 0;
         }
     }
 }
