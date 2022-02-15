@@ -10,12 +10,14 @@ public class CountDown {
         countDown(number);
     }
     //recursion
-    public static int countDown(int number){
-        if (number > -1){
-            System.out.println(number);
-           return countDown(number-1);
+    public static void countDown(int number) {
+        if (number == 0) {
+            System.out.println(0);
         } else {
-            return 0;
+            System.out.println(number);
+            number--;
+            countDown(number);
         }
     }
 }
+
