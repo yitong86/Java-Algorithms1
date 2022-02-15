@@ -22,7 +22,7 @@ public class RecursionFactorial {
             }
     }
     public static void  coutdownRecursive(int n){
-            if(n ==1 ){
+            if(n == 1 ){
                 return;
             }
         System.out.println(n);
