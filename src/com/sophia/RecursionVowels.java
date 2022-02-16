@@ -1,6 +1,10 @@
 package com.sophia;
 
 public class RecursionVowels {
+    public static void main(String[] args) {
+        String str = "abc de";
+        System.out.println(countVowels(str,str.length()));
+    }
     public static int vowels(char ch){
         if (ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'){
             return 1;
@@ -9,17 +13,13 @@ public class RecursionVowels {
         }
     }
 
-    public static int countVowels(String str.int n) {
-            int n = 0;
-        int vowelsCounter = 0;
-            if (str.length() == 0){
-                return 0;
-            }if (n == str.length()){
-            return vowelsCounter;
-        }else{
+    public static int countVowels(String str,int n) {
+        if (n == 1)
+            return vowels(str.charAt(n - 1));
 
-        }
-        }
-
+        return countVowels(str, n-1) + vowels(str.charAt(n - 1));
     }
+        }
+
+
 

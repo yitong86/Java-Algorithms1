@@ -10,7 +10,7 @@ public class RecursionFactorial {
         }
 
     public static void main(String[] args) {
-            coutdownRecursive(5);
+            countdownRecursive(5);
     }
 
 
@@ -21,12 +21,12 @@ public class RecursionFactorial {
                 n--;
             }
     }
-    public static void  coutdownRecursive(int n){
-            if(n == 1 ){
+    public static void  countdownRecursive(int n){
+            if(n == 1){
                 return;
             }
         System.out.println(n);
-            coutdownRecursive(n-1);
+            countdownRecursive(n-1);
     }
     }
 
