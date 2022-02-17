@@ -21,12 +21,18 @@ public class HashMapNote {
      *  2. STRING_ARRAY note
      */
     public static void main(String[] args) {
+        List<String> magazine = List.of("give me one grand today night".split(" "));
+
+        List<String> note = List.of("give one grand today".split(" "));
+
+        checkMagazine(magazine, note);
 
     }
     public static void checkMagazine(List<String> magazine, List<String> note) {
         // Write your code here
         HashMap<String, Integer> magazineWords = new HashMap<String, Integer>();
         HashMap<String, Integer> notesWords = new HashMap<String, Integer>();
+        //use for each loop, declare data type is same like array(magazine),declare variable name word
         for (String word : magazine){
             if(magazineWords.containsKey(word)){
                 int count = magazineWords.get(word);
@@ -58,8 +64,8 @@ public class HashMapNote {
 //    Sample Input 1
 //
 //        6 5
-//        two times three is not four
-//        two times two is four
+//       magazine: two times three is not four
+//        notes: two times two is four
 //        Sample Output 1
 //
 //        No
