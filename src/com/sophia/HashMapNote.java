@@ -21,7 +21,7 @@ public class HashMapNote {
      *  2. STRING_ARRAY note
      */
     public static void main(String[] args) {
-        List<String> magazine = List.of("give me one grand today night".split(" "));
+        List<String> magazine = List.of("give me one grand today night me".split(" "));
 
         List<String> note = List.of("give one grand today".split(" "));
 
@@ -41,7 +41,8 @@ public class HashMapNote {
             }else{
                 magazineWords.put(word, 1);
             }
-        }
+            System.out.println(magazineWords);
+        }//give one grand today
         for (String word:note){
             if (magazineWords.containsKey(word)){
                 int count = magazineWords.get(word);
@@ -51,12 +52,12 @@ public class HashMapNote {
                 }
                 count--;
                 magazineWords.put(word,count);
-            }else if(!magazineWords.containsKey(word)){
+            }else {
                 System.out.println("No");
                 return;
             }
         }
-        System.out.println("Yes");
+       // System.out.println("Yes");
     }
 
 }
