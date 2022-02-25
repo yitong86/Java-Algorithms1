@@ -13,3 +13,4 @@ public class HashadNumber {
         }
     }
 
+//An integer number in base 10 which is divisible by the sum of its digits is said to be a Harshad Number.
