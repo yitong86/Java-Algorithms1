@@ -11,10 +11,13 @@ public class HashadNumber {
             while(n > 0){//1234 > 0  //123//12//1
                 int lastDigital = n % 10;//4  //3 //2 //1
                 sum = sum +lastDigital;//0+4=4 // 4+3=7 //4+3+2=9 //4+3+2+1=10
-                n = n / 10;//1234/10=123.4 update number//12.3 // 1.2 //0
+                n = n / 10;//1234/10=123.4 update number//12.3 // 1.2 //->0
             }
-            return number % sum == 0 ? true:false;//why we cannot use n instead of number?
+            return number % sum == 0 ? true:false;
         }
     }
 
 //An integer number in base 10 which is divisible by the sum of its digits is said to be a Harshad Number.
+//https://edabit.com/challenge/kgMghy3omychqLnXv
+//String s = "age: 47"
+//s=s.replaceAll("\\D+","")
