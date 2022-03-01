@@ -25,4 +25,11 @@ public class Day16Exceptions {
         }
     }
 
-
+//            try{
+//                    int[]a=null;
+//                    System.out.println(a);
+//                    }catch(NullPointerExeception e){
+//                    System.out.println("The array is null");
+//                    }catch(ArrayIndexOfBoundsException e){
+//                    System.out.println("Your index is out of bounds!");
+//                    }
